@@ -1,0 +1,91 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  margin: 10px;
+  white-space: nowrap;
+}
+
+h1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #FBD94E;
+  letter-spacing: 0.1rem;
+}
+hr {
+  border-bottom-color: #FBD94E;
+  border-top-color: #F35C5C;
+  border-width: 1px;
+  border-style: dotted;
+  border-left-color: #FBD94E;
+  border-right-color: #FBD94E
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  font-weight: bold;
+  color: #F35C5C;
+  background-color: #FBD94E;
+  border: 0;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+/* Customize the label (the checkbox) */
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+.checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: #FBD94E;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #F35C5C;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
